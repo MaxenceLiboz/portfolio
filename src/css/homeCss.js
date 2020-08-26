@@ -68,6 +68,12 @@ const useStyles = makeStyles({
     padPara: {
         paddingTop: "4em",
     },
+
+    footer: {
+        height: "10vh",
+        backgroundColor: "#252122",
+        color: "white",
+    },
 });
 
 export default useStyles;

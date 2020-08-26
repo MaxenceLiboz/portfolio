@@ -1,9 +1,11 @@
 import React from "react";
+import homeCss from "../css/homeCss";
 
 const Footer = () => {
+    const classes = homeCss();
     return (
         <>
-            <div>Footer here</div>
+            <div className={classes.footer}>Footer here</div>
         </>
     );
 };
