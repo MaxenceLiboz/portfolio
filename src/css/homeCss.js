@@ -10,6 +10,7 @@ const useStyles = makeStyles({
         borderRadius: "15px",
         padding: "0 3em",
         fontWeight: "bold",
+        fontFamily: "impact",
     },
 
     Button: {
@@ -17,7 +18,9 @@ const useStyles = makeStyles({
         border: "solid 3px #000",
         borderRadius: "15px",
         padding: "0 3em",
-        fontWeight: "bold",
+        fontWeight: "900",
+        fontSize: "1em",
+        fontFamily: "impact",
     },
 
     downArrow: {
