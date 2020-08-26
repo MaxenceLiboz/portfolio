@@ -19,7 +19,7 @@ const useStyles = makeStyles({
         borderRadius: "15px",
         padding: "0 3em",
         fontWeight: "900",
-        fontSize: "1em",
+
         fontFamily: "impact",
     },
 

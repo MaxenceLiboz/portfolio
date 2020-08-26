@@ -54,7 +54,7 @@ const Home = (props) => {
                     </Grid>
                     <Grid item xs={5} sm={7} />
                     <Grid item xs={1} sm={1} />
-                    <Grid item xs={6} sm={4} container justify="center">
+                    <Grid item xs={6} sm={4} container>
                         <Button className={classes.Button}>Mes projets</Button>
                     </Grid>
                     <Grid item xs={5} sm={7} />
