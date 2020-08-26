@@ -5,18 +5,17 @@ import Graphic from "../images/Graphic.jpg";
 const useStyles = makeStyles({
     colorButton: {
         color: "white",
-        height: "2em",
 
         border: "solid 3px #f95a00",
         borderRadius: "15px",
-        padding: "1em 3em",
+        padding: "0 3em",
     },
 
     Button: {
-        height: "2em",
+        height: "3em",
         border: "solid 3px #000",
         borderRadius: "15px",
-        padding: "1em 3em",
+        padding: "0 3em",
     },
 
     downArrow: {
