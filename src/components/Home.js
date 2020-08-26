@@ -5,6 +5,7 @@ import Footer from "./Footer";
 
 const Home = (props) => {
     const classes = homeCss();
+
     return (
         <>
             <Grid container>

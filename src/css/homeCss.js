@@ -10,7 +10,6 @@ const useStyles = makeStyles({
         borderRadius: "15px",
         padding: "0 3em",
         fontWeight: "bold",
-        fontFamily: "impact",
     },
 
     Button: {
@@ -19,8 +18,6 @@ const useStyles = makeStyles({
         borderRadius: "15px",
         padding: "0 3em",
         fontWeight: "900",
-
-        fontFamily: "impact",
     },
 
     downArrow: {
@@ -71,8 +68,44 @@ const useStyles = makeStyles({
 
     footer: {
         height: "10vh",
-        backgroundColor: "#252122",
         color: "white",
+        paddingTop: "1em",
+    },
+
+    a: {
+        color: "#c5c4c4",
+    },
+
+    instagram: {
+        width: " 1em !important",
+        background:
+            " radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)",
+    },
+
+    twitter: {
+        backgroundColor: "#2daae4",
+    },
+
+    facebook: {
+        backgroundColor: "#3c5a98",
+    },
+
+    icon: {
+        borderRadius: "10px",
+        padding: "0.2em",
+    },
+
+    copyright: {
+        backgroundColor: "#464646",
+        width: "100%",
+        borderRadius: "5px",
+        fontSize: "10px",
+        height: "3em",
+        color: "#858484",
+    },
+
+    padContact: {
+        paddingLeft: "4em",
     },
 });
 
