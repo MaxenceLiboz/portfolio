@@ -40,7 +40,7 @@ const useStyles = makeStyles({
 
     graphic: {
         backgroundImage: `url(${Graphic})`,
-        height: "80vh",
+        height: "90vh",
         width: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -80,14 +80,17 @@ const useStyles = makeStyles({
         width: " 1em !important",
         background:
             " radial-gradient(circle at 30% 107%,#fdf497 0%,#fdf497 5%,#fd5949 45%,#d6249f 60%,#285aeb 90%)",
+        margin: "0.2em",
     },
 
     twitter: {
         backgroundColor: "#2daae4",
+        margin: "0.2em",
     },
 
     facebook: {
         backgroundColor: "#3c5a98",
+        margin: "0.2em",
     },
 
     icon: {
@@ -97,15 +100,16 @@ const useStyles = makeStyles({
 
     copyright: {
         backgroundColor: "#464646",
-        width: "100%",
+        color: "#858484",
+        width: "10em",
         borderRadius: "5px",
         fontSize: "10px",
         height: "3em",
-        color: "#858484",
+        marginBottom: "1em",
     },
 
     padContact: {
-        paddingLeft: "4em",
+        paddingLeft: "1em",
     },
 });
 

@@ -8,11 +8,16 @@ const Footer = () => {
     return (
         <>
             <Grid container className={classes.footer}>
-                <Grid item container xs={12} sm={4} md={3}>
-                    <Grid item xs={4}>
+                <Grid
+                    item
+                    container
+                    xs={12}
+                    md={4}
+                    lg={3}
+                    style={{ paddingLeft: "1em" }}
+                >
+                    <div className="row pd-1">
                         <h3>Me suivre :</h3>
-                    </Grid>
-                    <Grid item xs={2}>
                         <a
                             rel="noopener noreferrer"
                             target="_blank"
@@ -25,8 +30,6 @@ const Footer = () => {
                                 color="white"
                             />
                         </a>
-                    </Grid>
-                    <Grid item xs={2}>
                         <a
                             rel="noopener noreferrer"
                             target="_blank"
@@ -39,9 +42,6 @@ const Footer = () => {
                                 color="white"
                             />
                         </a>
-                    </Grid>
-
-                    <Grid item xs={2}>
                         <a
                             rel="noopener noreferrer"
                             target="_blank"
@@ -54,13 +54,22 @@ const Footer = () => {
                                 color="white"
                             />
                         </a>
-                    </Grid>
+                    </div>
                 </Grid>
-
-                <Grid item container xs={12} sm={4} md={5}>
-                    <Grid item xs={12} />
-                    <Grid item xs={12} />
-
+                <Grid item md={2} lg={6} />
+                <Grid
+                    item
+                    container
+                    xs={12}
+                    md={6}
+                    lg={3}
+                    direction="row"
+                    style={{ paddingLeft: "1em" }}
+                >
+                    <h3>Me contacter : maxoulib@gmail.com</h3>
+                </Grid>
+                <Grid item xs={1} md={3} />
+                <Grid item container xs={10} md={6}>
                     <Grid
                         item
                         xs={12}
@@ -74,21 +83,7 @@ const Footer = () => {
                         </p>
                     </Grid>
                 </Grid>
-                <Grid
-                    item
-                    container
-                    xs={12}
-                    sm={4}
-                    md={4}
-                    className={classes.padContact}
-                >
-                    <Grid item xs={4}>
-                        <h3>Me contacter :</h3>
-                    </Grid>
-                    <Grid item xs={6}>
-                        <h3>maxoulib@gmail.com</h3>
-                    </Grid>
-                </Grid>
+                <Grid item xs={1} md={3} />
             </Grid>
         </>
     );
