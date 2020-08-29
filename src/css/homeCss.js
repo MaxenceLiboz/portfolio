@@ -18,6 +18,7 @@ const useStyles = makeStyles({
         borderRadius: "15px",
         padding: "0 3em",
         fontWeight: "900",
+        marginBottom: "1em",
     },
 
     downArrow: {
@@ -38,9 +39,18 @@ const useStyles = makeStyles({
         backgroundSize: "cover",
     },
 
-    graphic: {
+    mobileGraphic: {
         backgroundImage: `url(${Graphic})`,
-        height: "90vh",
+        height: "85 vh",
+        width: "100%",
+        backgroundPosition: "center",
+        backgroundRepeat: "no-repeat",
+        backgroundSize: "cover",
+    },
+
+    desktopGraphic: {
+        backgroundImage: `url(${Graphic})`,
+        height: "60vh",
         width: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -60,6 +70,7 @@ const useStyles = makeStyles({
         fontWeight: "bold",
         color: "white",
         fontFamily: "Courier",
+        textAlign: "justify",
     },
 
     padPara: {
@@ -111,6 +122,8 @@ const useStyles = makeStyles({
     padContact: {
         paddingLeft: "1em",
     },
+
+    sep: { borderTop: "solid 1px #858484" },
 });
 
 export default useStyles;

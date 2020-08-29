@@ -1,10 +1,12 @@
 import React from "react";
-import { Grid, Button } from "@material-ui/core";
+import { Grid, Button, useTheme, useMediaQuery } from "@material-ui/core";
 import homeCss from "../css/homeCss";
 import Footer from "./Footer";
 
 const Home = (props) => {
     const classes = homeCss();
+    const theme = useTheme();
+    const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
     return (
         <>
@@ -35,7 +37,17 @@ const Home = (props) => {
                         </div>
                     </Grid>
                 </Grid>
-                <Grid item xs={12} container className={classes.graphic}>
+
+                <Grid
+                    item
+                    xs={12}
+                    container
+                    className={
+                        isMobile
+                            ? classes.mobileGraphic
+                            : classes.desktopGraphic
+                    }
+                >
                     <Grid item xs={1} sm={1} />
                     <Grid item xs={6} sm={4}>
                         <p className={`${classes.para} ${classes.padPara}`}>
