@@ -1,10 +1,10 @@
 import React from "react";
-import homeCss from "../css/homeCss";
+import footerCss from "./footerCss";
 import { Grid, useTheme, useMediaQuery } from "@material-ui/core";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Footer = () => {
-    const classes = homeCss();
+    const classes = footerCss();
     const theme = useTheme();
     const isMobile = useMediaQuery(theme.breakpoints.down("sm"));
 
@@ -70,7 +70,15 @@ const Footer = () => {
                     style={{ paddingLeft: "1em" }}
                     className={isMobile ? classes.sep : ""}
                 >
-                    <h3>Me contacter : maxoulib@gmail.com</h3>
+                    <h3>
+                        Me contacter :{" "}
+                        <a
+                            className={classes.a}
+                            href="mailto: maxoulib@gmail.com"
+                        >
+                            maxoulib@gmail.com
+                        </a>
+                    </h3>
                 </Grid>
                 <Grid item xs={1} md={3} />
                 <Grid item container xs={10} md={6}>

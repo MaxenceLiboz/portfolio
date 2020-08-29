@@ -1,7 +1,7 @@
 import React from "react";
 import { Grid, Button, useTheme, useMediaQuery } from "@material-ui/core";
-import homeCss from "../css/homeCss";
-import Footer from "./Footer";
+import homeCss from "./homeCss";
+import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
 
 const Home = (props) => {
