@@ -2,6 +2,7 @@ import React from "react";
 import { Grid, Button, useTheme, useMediaQuery } from "@material-ui/core";
 import homeCss from "../css/homeCss";
 import Footer from "./Footer";
+import { Link } from "react-scroll";
 
 const Home = (props) => {
     const classes = homeCss();
@@ -31,8 +32,15 @@ const Home = (props) => {
                     <Grid item xs={12} container justify="center">
                         <div style={{ position: "absolute", bottom: "0" }}>
                             <Button className={classes.colorButton}>
-                                En savoir plus
+                                <Link
+                                    to="graphic"
+                                    smooth={true}
+                                    duration={1000}
+                                >
+                                    En savoir plus
+                                </Link>
                             </Button>
+
                             <p className={classes.downArrow}>↓</p>
                         </div>
                     </Grid>
@@ -47,10 +55,17 @@ const Home = (props) => {
                             ? classes.mobileGraphic
                             : classes.desktopGraphic
                     }
+                    id="graphic"
                 >
                     <Grid item xs={1} sm={1} />
                     <Grid item xs={6} sm={4}>
-                        <p className={`${classes.para} ${classes.padPara}`}>
+                        <p
+                            className={`${
+                                isMobile
+                                    ? classes.mobilePadPara
+                                    : classes.desktopPadPara
+                            } ${classes.para}`}
+                        >
                             Mon but est d’aider les entreprises, petites ou
                             grandes, à s’expandre en leur créant un site web.
                             Cela leurs permet d’augmenter leurs visibilté et

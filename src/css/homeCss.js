@@ -41,7 +41,7 @@ const useStyles = makeStyles({
 
     mobileGraphic: {
         backgroundImage: `url(${Graphic})`,
-        height: "85 vh",
+        height: "100 vh",
         width: "100%",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
@@ -73,8 +73,12 @@ const useStyles = makeStyles({
         textAlign: "justify",
     },
 
-    padPara: {
+    desktopPadPara: {
         paddingTop: "4em",
+    },
+
+    mobilePadPara: {
+        paddingTop: "2em",
     },
 
     footer: {
