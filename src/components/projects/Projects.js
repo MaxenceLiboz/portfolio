@@ -32,8 +32,8 @@ const Porjects = () => {
                     </Grid>
                     <Grid item xs={1} md={3} />
 
-                    <Grid item xs={3} />
-                    <Grid item xs={6}>
+                    <Grid item xs={1} md={3} />
+                    <Grid item xs={10} md={6}>
                         <Cards
                             styles={{
                                 minHeight: "200px",
@@ -52,7 +52,7 @@ const Porjects = () => {
                             button={<>En savoir plus sur ce projet</>}
                         />
                     </Grid>
-                    <Grid item xs={3} />
+                    <Grid item xs={1} md={3} />
                 </Grid>
             </div>
         </>
