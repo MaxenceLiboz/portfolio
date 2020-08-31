@@ -20,7 +20,8 @@
         "react-scroll": "^1.8.1"
     },
     "scripts": {
-        "predep": "npm run build",
+        "prepredeploy": "npm run build",
+        "predeploy": "git-push-project .",
         "deploy": "gh-pages -d build",
         "start": "react-scripts start",
         "build": "react-scripts build",
