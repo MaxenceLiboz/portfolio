@@ -1,8 +1,8 @@
 import React from "react";
 import { Grid, Button, useTheme, useMediaQuery } from "@material-ui/core";
 import homeCss from "./homeCss";
-import Footer from "../footer/Footer";
 import { Link } from "react-scroll";
+import { Link as RouteLink } from "react-router-dom";
 
 const Home = (props) => {
     const classes = homeCss();
@@ -83,12 +83,16 @@ const Home = (props) => {
                     <Grid item xs={5} sm={7} />
                     <Grid item xs={1} sm={1} />
                     <Grid item xs={6} sm={4} container>
-                        <Button className={classes.Button}>Mes projets</Button>
+                        <RouteLink
+                            to="/projects"
+                            style={{ textDecoration: "none" }}
+                        >
+                            <Button className={classes.Button}>
+                                Mes projets
+                            </Button>
+                        </RouteLink>
                     </Grid>
                     <Grid item xs={5} sm={7} />
-                </Grid>
-                <Grid item xs={12}>
-                    <Footer />
                 </Grid>
             </Grid>
         </>
