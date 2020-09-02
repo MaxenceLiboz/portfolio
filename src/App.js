@@ -15,7 +15,6 @@ function App() {
                 <ScrollToTop />
                 <Route path="/portfolio" exact component={Home} />
                 <Route path="/projects" exact component={Projects} />
-
                 <Footer />
             </Router>
         </>
