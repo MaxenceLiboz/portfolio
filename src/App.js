@@ -5,7 +5,7 @@ import Projects from "./components/projects/Projects";
 import "./components/IconsLibrary";
 import ScrollToTop from "react-router-scroll-top";
 
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { HashRouter as Router, Route } from "react-router-dom";
 import Footer from "./components/footer/Footer";
 
 function App() {
@@ -13,7 +13,7 @@ function App() {
         <>
             <Router>
                 <ScrollToTop />
-                <Route path="/portfolio" exact component={Home} />
+                <Route path="/" exact component={Home} />
                 <Route path="/projects" exact component={Projects} />
                 <Footer />
             </Router>
