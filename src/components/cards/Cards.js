@@ -6,7 +6,7 @@ import CardMedia from "@material-ui/core/CardMedia";
 import Button from "@material-ui/core/Button";
 import Typography from "@material-ui/core/Typography";
 import { withRouter } from "react-router-dom";
-import cardsCss from "./cardsCss";
+import SButton from "../styleComponent/SButton";
 
 const Cards = (props) => {
     const {
@@ -18,8 +18,6 @@ const Cards = (props) => {
         button,
         styles,
     } = props;
-
-    const classes = cardsCss();
 
     const handleClick = () => {
         history.push(pageURL ? pageURL : "/projects");
@@ -66,18 +64,7 @@ const Cards = (props) => {
                         paddingBottom: "2em",
                     }}
                 >
-                    {button ? (
-                        <Button
-                            className={classes.button}
-                            variant="contained"
-                            color="primary"
-                            onClick={() => handleClick()}
-                        >
-                            {button}
-                        </Button>
-                    ) : (
-                        ""
-                    )}
+                    {button ? <SButton text={button} color="white" /> : ""}
                 </CardActions>
             </Card>
         </>

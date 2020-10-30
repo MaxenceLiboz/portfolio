@@ -1,8 +1,9 @@
 import React from "react";
-import { Grid, Button, useTheme, useMediaQuery } from "@material-ui/core";
+import { Grid, useTheme, useMediaQuery } from "@material-ui/core";
 import homeCss from "./homeCss";
 import { Link } from "react-scroll";
 import { Link as RouteLink } from "react-router-dom";
+import SButton from "../styleComponent/SButton";
 
 const Home = (props) => {
     const classes = homeCss();
@@ -31,15 +32,17 @@ const Home = (props) => {
                     </Grid>
                     <Grid item xs={12} container justify="center">
                         <div style={{ position: "absolute", bottom: "0" }}>
-                            <Button className={classes.colorButton}>
-                                <Link
-                                    to="graphic"
-                                    smooth={true}
-                                    duration={1000}
-                                >
-                                    En savoir plus
-                                </Link>
-                            </Button>
+                            <Link to="graphic" smooth={true} duration={1000}>
+                                <SButton
+                                    text="En savoir plus"
+                                    color="white"
+                                    border="solid 3px #f95a00"
+                                    borderRadius="15px"
+                                    padding="0 3em"
+                                    fontWeight="bold"
+                                    bgColor="transparent"
+                                />
+                            </Link>
 
                             <p className={classes.downArrow}>↓</p>
                         </div>
@@ -87,9 +90,16 @@ const Home = (props) => {
                             to="/projects"
                             style={{ textDecoration: "none" }}
                         >
-                            <Button className={classes.Button}>
-                                Mes projets
-                            </Button>
+                            <SButton
+                                text="Mes projets"
+                                border="solid 3px #000"
+                                borderRadius="15px"
+                                height="3em"
+                                padding="0 3em"
+                                fontWeight="900"
+                                marginBottom="1em"
+                                bgColor="transparent"
+                            />
                         </RouteLink>
                     </Grid>
                     <Grid item xs={5} sm={7} />

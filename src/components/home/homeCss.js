@@ -3,25 +3,6 @@ import Computer from "../../images/Computer.jpg";
 import Graphic from "../../images/Graphic.jpg";
 
 const useStyles = makeStyles({
-    root: {},
-
-    colorButton: {
-        color: "white",
-        border: "solid 3px #f95a00",
-        borderRadius: "15px",
-        padding: "0 3em",
-        fontWeight: "bold",
-    },
-
-    Button: {
-        height: "3em",
-        border: "solid 3px #000",
-        borderRadius: "15px",
-        padding: "0 3em",
-        fontWeight: "900",
-        marginBottom: "1em",
-    },
-
     downArrow: {
         textAlign: "center",
         color: "#f95a00",
